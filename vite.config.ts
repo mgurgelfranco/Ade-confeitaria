@@ -4,9 +4,9 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
-  return {
+  return {base=adeconfeitaria},
     plugins: [react(), tailwindcss()],
-    resolve: {base/adeconfeitaria},
+    resolve: 
       alias: {
         '@': path.resolve(__dirname, '.'),
       },
